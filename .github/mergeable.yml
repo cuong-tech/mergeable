@@ -20,6 +20,8 @@ mergeable:
               reviewers: [ jusx ]
           - required:
               reviewers: [ shine2lay ]
+          - required:
+              reviewers: [ cuong-tech ]
       - do: or
         # if the PR is a new feature or a fix, it must be logged in the changelog
         validate:
