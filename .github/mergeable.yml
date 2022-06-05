@@ -28,11 +28,6 @@ mergeable:
             must_exclude:
               regex: ^(feat|fix)(\(\w+\))?:.+$
               message: 'new features or fixes needed to be logged to the changelog'
-    pass:
-      - do: merge
-        merge_method: 'squash'
-      - do: checks
-        status: 'success'
 
   - when: issue_comment.created
     name: 'Merge on comment'
