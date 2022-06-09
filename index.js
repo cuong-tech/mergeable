@@ -1,4 +1,5 @@
 const { Mergeable } = require('./lib/mergeable')
+
 const logger = require('./lib/logger')
 const githubRateLimitEndpoint = require('./lib/utils/githubRateLimitEndpoint')
 const prometheusMiddleware = require('express-prometheus-middleware')
