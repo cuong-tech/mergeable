@@ -1,5 +1,6 @@
 Configuration of the rulesets can be done in two ways: Simple or advanced.
 
+
 Here's an example file for simple settings:
 
 ```yml
