@@ -42,7 +42,7 @@ mergeable:
       - do: merge
         merge_method: "rebase"
         
-  - when: check_suite.completed
+  - when: check_suite.*
     name: 'Check suite completed'
     validate:
       - do: title
