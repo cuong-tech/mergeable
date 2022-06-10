@@ -42,8 +42,8 @@ mergeable:
       - do: merge
         merge_method: "rebase"
         
-  - when: check_suite.*
-    name: 'Check suite completed'
+  - when: status.*
+    name: 'Status changed'
     validate:
       - do: title
         # Enforce semantic release convention.
