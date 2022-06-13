@@ -29,7 +29,7 @@ mergeable:
               regex: ^(feat|fix)(\(\w+\))?:.+$
               message: 'new features or fixes needed to be logged to the changelog'
 
-  - when: issue_comment.created
+  - when: issue_comment.created, check_suite.*
     name: 'Merge on comment'
     filter:
       - do: payload
