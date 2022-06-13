@@ -43,6 +43,5 @@ mergeable:
           regex: '^merge$'
           message: 'Comment "merge" to merge the PR'
     pass:
-      - do: comment
-        payload:
-          body: "Good"
+      - do: merge
+        merge_method: "rebase"
