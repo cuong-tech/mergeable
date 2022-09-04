@@ -1,6 +1,5 @@
 ## Contributing
 
-test
 [fork]: /fork
 [pr]: /compare
 [style]: https://standardjs.com/
