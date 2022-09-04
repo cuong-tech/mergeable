@@ -43,3 +43,7 @@ mergeable:
         must_include:
           regex: '^merge$'
           message: 'Comment "merge" to merge the PR'
+          
+    pass:
+      - do: merge
+        merge_method: "rebase"
