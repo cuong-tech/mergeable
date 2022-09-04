@@ -29,7 +29,7 @@ Some examples of what you can do:
 - And [more][configuration]
 
 ---
-
+test
 
 # Documentation
 Check it out over at https://mergeable.readthedocs.io/en/latest/index.html
