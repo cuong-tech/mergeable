@@ -28,11 +28,7 @@ mergeable:
             must_exclude:
               regex: ^(feat|fix)(\(\w+\))?:.+$
               message: 'new features or fixes needed to be logged to the changelog'
-    pass:
-      - do: comment
-        payload:
-          body: >
-            Your very long comment can go here.
+
 
   - when: issue_comment.created, check_suite.*
     name: 'Merge on comment'
@@ -48,5 +44,7 @@ mergeable:
           regex: '^merge$'
           message: 'Comment "merge" to merge the PR'
     pass:
-      - do: merge
-        merge_method: "rebase"
+      - do: comment
+        payload:
+          body: >
+            Your very long comment can go here.
