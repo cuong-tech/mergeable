@@ -43,8 +43,3 @@ mergeable:
         must_include:
           regex: '^merge$'
           message: 'Comment "merge" to merge the PR'
-    pass:
-      - do: comment
-        payload:
-          body: >
-            Your very long comment can go here.
