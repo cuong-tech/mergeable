@@ -32,18 +32,11 @@ mergeable:
 
   - when: issue_comment.*, pull_request.*, issues.*, pull_request_review.*
     name: 'Merge on comment'
-    filter:
-      - do: payload
-        comment:
-          body:
-            must_include:
-              regex: '^merge$'
     validate:
       - do: lastComment
         must_include:
           regex: '^merge$'
           message: 'Comment "merge" to merge the PR'
-          
     pass:
       - do: merge
         merge_method: "rebase"
